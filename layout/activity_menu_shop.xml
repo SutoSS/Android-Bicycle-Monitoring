@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuShopActivity">
+
+    <LinearLayout
+        android:id="@+id/greeting_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/img_default_half_morning">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/greeting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="35dp"
+                android:text="Good Morning"
+                android:fontFamily="@font/poppins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"
+                android:text="Richo Fedhia S"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Point : 80"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/img_coin"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="60dp">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/img_avatar"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:elevation="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_img">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_btn_shop"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Helm Sepeda"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_sepeda" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="100"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/img_coin" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_claim_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Claim"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_shop_grey"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bg_btn_shop"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sepeda Lipat"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_sepeda" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="250"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/img_coin" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_claim_250"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Claim"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_shop_blue"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_shop"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sepeda Lipat"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_sepeda" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="300"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/img_coin" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_claim_300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Claim"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_shop_grey"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_shop"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sepeda Lipat"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_sepeda" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="200"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/img_coin" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_claim_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Claim"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_shop_blue"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
